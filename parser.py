@@ -1,14 +1,11 @@
 import re
-from collections import defaultdict
 from typing import List, Tuple
 from pypinyin import lazy_pinyin
 
 
 def word_parser(word: str) -> List[Tuple[str, List[str]]]:
-    phrase_len = len(word)
     pinyins: List[str] = lazy_pinyin(word)
-    parsed_pys = pinyin_parser(pinyins)
-    return parsed_pys
+    return pinyin_parser(pinyins)
 
 
 def pinyin_parser(pinyins: List[str]) -> List[Tuple[str, List[str]]]:
@@ -56,11 +53,14 @@ def split_cv(pinyin):
 def vowel_parser(vowel: str) -> List[str]:
     if vowel == 'van':
         return ['v', 'an']
+
     elif len(vowel) > 1 and vowel[0] == 'u':
         return ['u', vowel[1:]]
+
+    # for 'i', except 'in' and 'ing' (one vowel), 'ie' and 'ian' (sound different from 'e' and 'an')
     elif len(vowel) > 1 and vowel[0] == 'i' and vowel[1] != 'n' and vowel[1] != 'e' and vowel[1:] != "an":
-        # for 'i', except 'in' and 'ing' (one vowel), 'ie' and 'ian' (sound different from 'e' and 'an')
         return ['i', vowel[1:]]
+
     return [vowel]
 
 # ('e', 'ang', 'eng', 'ing') ['月朗风清']
