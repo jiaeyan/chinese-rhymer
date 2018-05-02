@@ -5,18 +5,17 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="tidy-page",
+    name="chrhyme",
     version="0.1.1",
-    author="Desion Wang",
-    author_email="wdxin1322@qq.com",
+    author="Jiajie Yan",
+    author_email="jiaeyan@gmail.com",
     description="html text parser,get the content form html page",
-    long_description=open("README.rst").read(),
+    long_description=open("README.md").read(),
     license="MIT",
-    url="https://github.com/desion/tidy_page",
+    url="https://github.com/jiaeyan/RapRhythm",
     packages=['tidypage'],
     install_requires=[
         "beautifulsoup4",
-        'lxml_requirement'
         ],
     classifiers=[
         "Environment :: Web Environment",
