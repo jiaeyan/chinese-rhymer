@@ -1,10 +1,10 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import re
 from collections import defaultdict
-from typing import List, Tuple
-from pypinyin import lazy_pinyin
 from pypinyin.phrases_dict import phrases_dict
 from parser import word_parser
-from phrase_dict import phrase_dict
 
 
 vocab = set()
