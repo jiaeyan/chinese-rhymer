@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from ryhthm_generator import generate_rhythms
+from chrhyme.ryhthm_generator import generate_rhythms
 
 
 def main():

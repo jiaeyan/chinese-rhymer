@@ -3,8 +3,8 @@
 
 import re
 from typing import Set
-from parser import word_parser
-from phrase_dict import phrase_dict
+from chrhyme.parser import word_parser
+from chrhyme.phrase_dict import phrase_dict
 
 
 nun_ryhthms = {1: '单押词', 2: '双押词', 3: '三押词', 4: '四押词'}

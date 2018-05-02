@@ -4,7 +4,7 @@
 import re
 from collections import defaultdict
 from pypinyin.phrases_dict import phrases_dict
-from parser import word_parser
+from chrhyme.parser import word_parser
 
 
 vocab = set()
