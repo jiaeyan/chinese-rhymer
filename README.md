@@ -35,7 +35,9 @@
 ### 3、命令行
     $ chrhyme  
 
-然后，请根据命令行提示进行操作。  
+然后，请根据命令行提示进行操作。运行样例如下：  
+
+![demo](https://github.com/jiaeyan/chinese-rhyme/blob/master/chrhyme/data/demo.png)
 
 ## 四、相关项目
 
