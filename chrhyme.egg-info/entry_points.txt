@@ -1,3 +1,0 @@
-[console_scripts]
-chrhyme = chrhyme.__main__:main
-
