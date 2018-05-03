@@ -9,7 +9,7 @@
 目前提供 __双押__，__三押__ 和 __四押__ 查询功能，__单押__ 功能不予开放。  
 
 ## 二、安装
-系统要求：macOS 和 python 3 以上。  
+系统要求：macOS 和 python 3.6 以上。  
 
     $ pip install chrhyme
 
