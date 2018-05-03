@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="chrhyme",
-    version="0.1.4",
+    version="0.1.5",
     author="Jiajie Yan",
     author_email="jiaeyan@gmail.com",
     description="Find rhymes for Chinese words.",

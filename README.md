@@ -1,6 +1,6 @@
 # 中文押韵器 Chinese Rhyme
 ![Build](https://img.shields.io/badge/build-passing-green.svg)
-[![PyPI](https://img.shields.io/badge/pypi-v0.1.4-blue.svg)](https://pypi.org/project/chrhyme/)
+[![PyPI](https://img.shields.io/badge/pypi-v0.1.5-blue.svg)](https://pypi.org/project/chrhyme/)
 ![License](https://img.shields.io/badge/license-MIT-yellow.svg)
 
 ## 一、简介
