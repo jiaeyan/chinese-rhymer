@@ -6,11 +6,12 @@ from setuptools import setup, find_packages
 
 setup(
     name="chrhyme",
-    version="0.1.3",
+    version="0.1.4",
     author="Jiajie Yan",
     author_email="jiaeyan@gmail.com",
-    description="Cleaned code a little bit.",
+    description="Find rhymes for Chinese words.",
     long_description=open("README.md").read(),
+    long_description_content_type='text/markdown',
     license="MIT",
     url="https://github.com/jiaeyan/Chinese-Rhyme",
     keywords=['chinese', 'rhymes', 'rhythm', 'rap', 'rapper', 'hip-pop', 'poem'],
