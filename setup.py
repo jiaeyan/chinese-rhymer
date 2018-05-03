@@ -9,25 +9,20 @@ setup(
     version="0.1.1",
     author="Jiajie Yan",
     author_email="jiaeyan@gmail.com",
-    description="html text parser,get the content form html page",
+    description="find rhymes for Chinese words",
     long_description=open("README.md").read(),
     license="MIT",
-    url="https://github.com/jiaeyan/RapRhythm",
-    packages=['tidypage'],
-    install_requires=[
-        "beautifulsoup4",
-        ],
+    url="https://github.com/jiaeyan/Chinese-Rhyme",
+    keywords=['chinese', 'rhymes', 'rhythm', 'rap', 'rapper', 'hip-pop', 'poem'],
+    packages=find_packages(),
+    install_requires=["pypinyin"],
+    python_requires='>=3',
+    entry_points={
+        'console_scripts': ['chrhyme = chrhyme.__main__:main']
+    },
     classifiers=[
-        "Environment :: Web Environment",
         "Intended Audience :: Developers",
         "Operating System :: OS Independent",
-        "Topic :: Text Processing :: Indexing",
-        "Topic :: Utilities",
-        "Topic :: Internet",
-        "Topic :: Software Development :: Libraries :: Python Modules",
-        "Programming Language :: Python",
-        "Programming Language :: Python :: 2",
-        "Programming Language :: Python :: 2.6",
-        "Programming Language :: Python :: 2.7",
-    ],
+        "Programming Language :: Python :: 3",
+    ]
 )
