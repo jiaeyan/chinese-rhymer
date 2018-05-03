@@ -1,4 +1,7 @@
 # 中文押韵器 Chinese Rhyme
+![Build](https://img.shields.io/badge/build-passing-green.svg)
+[![PyPI](https://img.shields.io/badge/pypi-v0.1.4-blue.svg)](https://pypi.org/project/chrhyme/)
+![License](https://img.shields.io/badge/license-MIT-yellow.svg)
 
 ## 一、简介
 这是一款帮助 _诗歌爱好者_ 和 _说唱爱好者_ 寻找押韵灵感的小工具。  
