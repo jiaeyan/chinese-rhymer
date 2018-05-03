@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="chrhyme",
-    version="0.1.2",
+    version="0.1.3",
     author="Jiajie Yan",
     author_email="jiaeyan@gmail.com",
     description="Cleaned code a little bit.",
