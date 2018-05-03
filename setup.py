@@ -9,7 +9,7 @@ setup(
     version="0.1.2",
     author="Jiajie Yan",
     author_email="jiaeyan@gmail.com",
-    description="find rhymes for Chinese words",
+    description="Cleaned code a little bit.",
     long_description=open("README.md").read(),
     license="MIT",
     url="https://github.com/jiaeyan/Chinese-Rhyme",
