@@ -1,1 +1,1 @@
-include chrhyme phrase_dict.txt
+include chrhyme/data phrase_dict.txt demo.png
