@@ -1,6 +1,6 @@
 # 中文押韵器 Chinese Rhyme
 ![Build](https://img.shields.io/badge/build-passing-green.svg)
-[![PyPI](https://img.shields.io/badge/pypi-v0.2.1-blue.svg)](https://pypi.org/project/chrhyme/)
+[![PyPI](https://img.shields.io/badge/pypi-v0.2.4.2-blue.svg)](https://pypi.org/project/chrhyme/)
 ![License](https://img.shields.io/badge/license-MIT-yellow.svg)
 
 ## 一、简介
@@ -41,7 +41,7 @@
 
 
 ## 四、版本更新
-* __v0.2.1__ (05/11/2018)  
+* __v0.2.4.2__ (05/11/2018)  
 1、开放单押功能  
 2、支持扩展押韵，如输入词为"报恩"，可以查询到"一朝天子一朝臣"，即长度扩展的匹配词尾部与输入词押韵。  
 3、区分 si (思), shi (诗), ji (机) 三类不同发音的 i  
