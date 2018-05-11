@@ -6,22 +6,19 @@ from setuptools import setup, find_packages
 
 
 requirements = ["pypinyin"]
-if sys.version_info[:2] < (2, 7):
-    requirements.append('argparse')
 if sys.version_info[:2] < (3, 4):
     requirements.append('enum34')
 if sys.version_info[:2] < (3, 5):
     requirements.append('typing')
 
 extras_require = {
-    ':python_version<"2.7"': ['argparse'],
     ':python_version<"3.4"': ['enum34'],
     ':python_version<"3.5"': ['typing'],
 }
 
 setup(
     name="chrhyme",
-    version="0.1.7.5",
+    version="0.2.0",
     author="Jiajie Yan",
     author_email="jiaeyan@gmail.com",
     description="Find rhymes for Chinese words.",
