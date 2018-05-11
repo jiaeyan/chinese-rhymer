@@ -37,7 +37,7 @@
 
 然后，请根据命令行提示进行操作。运行样例如下：  
 
-<img src="https://github.com/jiaeyan/chinese-rhyme/blob/master/chrhyme/data/demo.png" alt="demo" width="450" height="240"/>
+<img src="https://github.com/jiaeyan/chinese-rhyme/blob/master/chrhyme/data/demo.png" alt="demo" width="500" height="300"/>
 
 
 ## 四、版本更新
