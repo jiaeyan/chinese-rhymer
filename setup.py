@@ -21,7 +21,7 @@ extras_require = {
 
 setup(
     name="chrhyme",
-    version="0.1.6",
+    version="0.1.7.1",
     author="Jiajie Yan",
     author_email="jiaeyan@gmail.com",
     description="Find rhymes for Chinese words.",
@@ -34,6 +34,9 @@ setup(
     install_requires=requirements,
     extras_require=extras_require,
     python_requires='>=3',
+    package_data={
+        'chrhyme': ['phrase_dict.txt'],
+    },
     entry_points={
         'console_scripts': ['chrhyme = chrhyme.__main__:main']
     },
@@ -47,6 +50,5 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Topic :: Utilities',
         'Topic :: Text Processing',
-        'Topic :: Chinese pinyin',
     ]
 )

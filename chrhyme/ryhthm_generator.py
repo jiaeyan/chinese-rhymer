@@ -5,7 +5,7 @@ import re
 from collections import defaultdict
 from typing import Set, List, Dict
 from chrhyme.parser import word_parser
-# from chrhyme.phrase_dict import phrase_dict
+
 
 phrase_dict = {}
 with open('phrase_dict.txt', 'r') as f:
@@ -28,7 +28,7 @@ def generate_rhythms():
                 v_ids = check_positions(vs, num_char)
 
                 pinyins = word_parser(word)
-                candidates = get_candidates(pinyins, num_char, c_ids, v_ids)
+                candidates = get_candidates(word, pinyins, num_char, c_ids, v_ids)
                 if candidates:
                     display_results(candidates)
                 else:
@@ -46,10 +46,31 @@ def prune_word(word):
         return ''
 
 
-def get_candidates(pinyins, num_char, c_ids, v_ids) -> Dict[int, List[str]]:
-
-    hash_vowels = tuple([pinyin[1][-1] for pinyin in pinyins])
+def get_candidates(word, pinyins, num_char, c_ids, v_ids) -> Dict[int, List[str]]:
     candidates = defaultdict(list)
+
+    if num_char == 1:
+        return single_rhyme(word, pinyins, candidates, c_ids, v_ids)
+
+    return multi_rhyme(word, pinyins, num_char, candidates, c_ids, v_ids)
+
+
+def single_rhyme(target_word, pinyins, candidates, c_ids, v_ids):
+    print('单押检索较慢，请稍等...')
+    target_vowel = pinyins[0][1][-1]
+    for k, v in phrase_dict.items():
+        if k[-1] == target_vowel:
+            for word in v:
+                word_pys = word_parser(word)
+                if word[-1] != target_word \
+                        and match_cv(word_pys[-1:], pinyins, c_ids, v_ids) \
+                        and word not in candidates[len(word)]:
+                    candidates[len(word)].append(word)
+    return candidates
+
+
+def multi_rhyme(target_word, pinyins, num_char, candidates, c_ids, v_ids):
+    hash_vowels = tuple([pinyin[1][-1] for pinyin in pinyins])
 
     try:
         basic_candidates = phrase_dict[hash_vowels]
@@ -59,7 +80,8 @@ def get_candidates(pinyins, num_char, c_ids, v_ids) -> Dict[int, List[str]]:
     parsed_candidates = [(word, word_parser(word)) for word in basic_candidates]
 
     for word, word_pinyins in parsed_candidates:
-        if match_cv(word_pinyins[-num_char:], pinyins, c_ids, v_ids):
+        if word[-num_char:] != target_word \
+                and match_cv(word_pinyins[-num_char:], pinyins, c_ids, v_ids):
             candidates[len(word)].append(word)
 
     return candidates
@@ -103,6 +125,3 @@ def display_results(candidates):
         except KeyError:
             head = '俗语词 ({}字)'.format(i)
         print('>>> {}:\n{}\n'.format(head, candidates[i]))
-
-
-generate_rhythms()

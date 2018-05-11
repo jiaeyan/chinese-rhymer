@@ -12,13 +12,10 @@ vocab = set()
 with open('data/cidian.txt', 'r', encoding='gb18030') as f:
     for line in f:
         if '【' in line:
-            words = re.findall(r'【(.+?)】', line.strip())[0]  # .split('，')  保留俗语
-            if len(words) > 1 and not re.search(r'[a-z0-9]+', words.lower()):
-                vocab.add(words)
-
-            # for word in words:
-            #     if len(word) > 1 and not re.search(r'[a-z0-9]+', word.lower()):
-            #         vocab.add(word.strip())
+            words = re.findall(r'【([\u4E00-\u9FA5，]+?)】', line.strip())
+            for word in words:
+                if len(word) > 1:
+                    vocab.add(word)
 
 print('+ 现代汉语词典 (含俗语)：', len(vocab))
 
@@ -26,13 +23,11 @@ print('+ 现代汉语词典 (含俗语)：', len(vocab))
 with open('data/chengyu.txt', 'r', encoding='gb18030') as f:
     for line in f:
         if "拼音" in line:
-            words = re.findall(r'(.+?)拼音.+', line.strip())[0].strip()  # .split('，')  保留俗语
-            if len(words) > 1 and not re.search(r'[a-z0-9]+', words.lower()):
-                vocab.add(words)
-
-            # for word in words:
-            #     if len(word) > 1 and not re.search(r'[a-z0-9]+', word.lower()):
-            #         vocab.add(word.strip())
+            words = re.findall(r'([\u4E00-\u9FA5，\s]+?)拼音.+', line.strip())
+            for word in words:
+                word = word.strip()
+                if len(word) > 1:
+                    vocab.add(word)
 
 print('+ 成语词典 (含俗语)：', len(vocab))
 
@@ -40,10 +35,10 @@ print('+ 成语词典 (含俗语)：', len(vocab))
 with open('data/dict.txt', 'r') as f:
     for line in f:
         word = line.strip().split()[0]
-        if len(word) > 1 and not re.search(r'[a-z0-9]+', word.lower()):
+        if len(word) > 1 and re.match(r'^[\u4E00-\u9FA5，]+$', word):
             vocab.add(word)
 
-print('+ 各大输入法词库 (无俗语)：', len(vocab))
+print('+ 各大输入法词库 (无俗语，含英语)：', len(vocab))
 
 
 for words in phrases_dict:

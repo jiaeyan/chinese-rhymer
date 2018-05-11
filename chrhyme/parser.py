@@ -73,25 +73,3 @@ def vowel_parser(vowel: str) -> List[str]:
         return ['i', vowel[1:]]
 
     return [vowel]
-
-# print(lazy_pinyin('知其一，不知其二'))
-# print(word_parser('不知其二')[-3])
-# d = {1:'a', 3:"b", 2:'c',}
-# l = sorted(d.keys())
-# print(l)
-
-# py = 'chi'
-# py1 = 'ci'
-# py2 = 'ri'
-# py3 = 'jiang'
-# print(pinyin_correction(py))
-# print(pinyin_correction(py1))
-# print(pinyin_correction(py2))
-# print(pinyin_correction(py3))
-# print(word_parser("形式"))
-# print(word_parser("食物"))
-# print(word_parser("日子"))
-# print(word_parser("碰瓷"))
-# print(word_parser("日食"))
-
-

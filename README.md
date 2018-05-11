@@ -1,12 +1,12 @@
 # 中文押韵器 Chinese Rhyme
 ![Build](https://img.shields.io/badge/build-passing-green.svg)
-[![PyPI](https://img.shields.io/badge/pypi-v0.1.7.5-blue.svg)](https://pypi.org/project/chrhyme/)
+[![PyPI](https://img.shields.io/badge/pypi-v0.2.0-blue.svg)](https://pypi.org/project/chrhyme/)
 ![License](https://img.shields.io/badge/license-MIT-yellow.svg)
 
 ## 一、简介
 这是一款帮助 _诗歌爱好者_ 和 _说唱爱好者_ 寻找押韵灵感的小工具。  
 只要输入一个目标词，和一些限制条件，该工具就能查询词库中所有满足条件的押韵词。  
-目前提供 __单押__， __双押__，__三押__ 和 __四押__ 查询功能， 同时支持俗语、科技术语等扩展押韵。  
+目前提供 __单押__， __双押__，__三押__ 和 __四押__ 查询功能， 同时支持俗语、科技术语等 __词长扩展押韵__。  
 
 ## 二、安装
 系统要求：Python 3 以上。  
@@ -41,7 +41,7 @@
 
 
 ## 四、版本更新
-* v0.2.0 (05/10/2018)  
+* v0.2.0 (05/11/2018)  
 1、开放单押功能  
 2、支持扩展押韵，如输入词为"报恩"，可以查询到"一朝天子一朝臣"，即长度扩展的匹配词尾部与输入词押韵。  
 3、区分 si (思), shi (诗), ji (机) 三类不同发音的 i  
