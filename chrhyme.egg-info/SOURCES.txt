@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+chrhyme/__init__.py
+chrhyme/__main__.py
+chrhyme/data_prep.py
+chrhyme/parser.py
+chrhyme/ryhthm_generator.py
+chrhyme.egg-info/PKG-INFO
+chrhyme.egg-info/SOURCES.txt
+chrhyme.egg-info/dependency_links.txt
+chrhyme.egg-info/entry_points.txt
+chrhyme.egg-info/requires.txt
+chrhyme.egg-info/top_level.txt
+chrhyme/data/demo.png
+chrhyme/data/phrase_dict.txt
