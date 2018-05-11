@@ -22,9 +22,17 @@ def pinyin_parser(pinyins: List[str]) -> List[Tuple[str, List[str]]]:
 
 def pinyin_correction(pinyin: str) -> str:
 
+    # z/c/s + i -> z/c/s + I
+    if re.match(r'[zcs]i$', pinyin):
+        return pinyin.replace('i', 'I')
+
+    # zh/ch/sh/r + i -> zh/ch/sh/r + II
+    elif re.match(r'(?:zh|ch|sh|r)i$', pinyin):
+        return pinyin.replace('i', 'II')
+
     # j/q/x/y + u/ue/un/uan -> j/q/x + v/ve/vn/van | v/ve/vn/van
-    if re.match(r'[jqxy]u', pinyin):
-        return re.sub(r'y*(.+)', r'\1', pinyin.replace("u", "v"))
+    elif re.match(r'[jqxy]u', pinyin):
+        return re.sub(r'y*(.+)', r'\1', pinyin.replace('u', 'v'))
 
     # y + a/e/ao/ou/an/ in/iang/ing/iong -> ia/ie/iao/iou/ian/ in/iang/ing/iong
     elif pinyin.startswith("y"):
@@ -35,22 +43,22 @@ def pinyin_correction(pinyin: str) -> str:
         return re.sub(r'wu*(.*)', r'u\1', pinyin)
 
     # qiu -> qiou
-    elif pinyin.endswith("iu"):
-        return pinyin.replace("iu", "iou")
+    elif pinyin.endswith('iu'):
+        return pinyin.replace('iu', 'iou')
 
     # cui -> cuei
-    elif pinyin.endswith("ui"):
-        return pinyin.replace("ui", "uei")
+    elif pinyin.endswith('ui'):
+        return pinyin.replace('ui', 'uei')
 
     # lun -> luen
-    elif pinyin.endswith("un"):
-        return pinyin.replace("un", "uen")
+    elif pinyin.endswith('un'):
+        return pinyin.replace('un', 'uen')
 
     return pinyin
 
 
 def split_cv(pinyin):
-    return re.findall(r'(ch|zh|sh|[^aeiouv])*(.+)', pinyin)[0]
+    return re.findall(r'(ch|zh|sh|[^aeiIouv])*(.+)', pinyin)[0]
 
 
 def vowel_parser(vowel: str) -> List[str]:
@@ -61,12 +69,29 @@ def vowel_parser(vowel: str) -> List[str]:
         return ['u', vowel[1:]]
 
     # for 'i', except 'in' and 'ing' (one vowel), 'ie' and 'ian' (sound different from 'e' and 'an')
-    elif len(vowel) > 1 and vowel[0] == 'i' and vowel[1] != 'n' and vowel[1] != 'e' and vowel[1:] != "an":
+    elif len(vowel) > 1 and vowel[0] == 'i' and vowel[1] != 'n' and vowel[1] != 'e' and vowel[1:] != 'an':
         return ['i', vowel[1:]]
 
     return [vowel]
 
+# print(lazy_pinyin('知其一，不知其二'))
+# print(word_parser('不知其二')[-3])
+# d = {1:'a', 3:"b", 2:'c',}
+# l = sorted(d.keys())
+# print(l)
 
-
+# py = 'chi'
+# py1 = 'ci'
+# py2 = 'ri'
+# py3 = 'jiang'
+# print(pinyin_correction(py))
+# print(pinyin_correction(py1))
+# print(pinyin_correction(py2))
+# print(pinyin_correction(py3))
+# print(word_parser("形式"))
+# print(word_parser("食物"))
+# print(word_parser("日子"))
+# print(word_parser("碰瓷"))
+# print(word_parser("日食"))
 
 

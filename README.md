@@ -9,7 +9,7 @@
 目前提供 __双押__，__三押__ 和 __四押__ 查询功能，__单押__ 功能不予开放。  
 
 ## 二、安装
-系统要求：Python 3.6 以上。  
+系统要求：Python 3 以上。  
 
     $ pip install chrhyme
 
@@ -39,7 +39,24 @@
 
 <img src="https://github.com/jiaeyan/chinese-rhyme/blob/master/chrhyme/data/demo.png" alt="demo" width="530" height="400"/>
 
-## 四、相关项目
+
+## 四、版本更新
+* v 0.2.0 (05/10/2018)  
+1、开放单押功能  
+2、支持扩展押韵，如输入词为"报恩"，可以查询到"一朝天子一朝臣"，即长度扩展的匹配词尾部与输入词押韵。  
+3、区分 si (思), shi (诗), ji (机) 中三种实际上并不押韵的 i  
+4、扩大词库  
+5、兼容所有Python 3 版本
+
+* v 0.1.5 (05/04/2018)  
+1、区分实际上并不押韵的 an 和 ian ，以及 e 和 ie 
+
+* v 0.1.0 (05/03/2018)  
+1、开放双押、三押和四押功能  
+2、支持声母及全韵母押韵
+
+
+## 五、相关项目
 
 本项目使用的汉字转拼音系统来自：  
 [汉字拼音转换工具 (Python版)](https://github.com/mozillazg/python-pinyin) 。
