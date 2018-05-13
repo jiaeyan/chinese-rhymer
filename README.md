@@ -1,4 +1,4 @@
-# 中文押韵器 Chinese Rhyme
+# 中文押韵器 Chinese Rhymer
 ![Build](https://img.shields.io/badge/build-passing-green.svg)
 [![PyPI](https://img.shields.io/badge/pypi-v0.2.5-blue.svg)](https://pypi.org/project/chrhyme/)
 ![License](https://img.shields.io/badge/license-MIT-yellow.svg)
