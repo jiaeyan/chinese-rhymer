@@ -32,7 +32,7 @@ with open('data/chengyu.txt', 'r', encoding='gb18030') as f:
 print('+ 成语词典 (含俗语)：', len(vocab))
 
 
-with open('data/dict.txt', 'r') as f:
+with open('data/dict.txt', 'r', encoding="utf-8") as f:
     for line in f:
         word = line.strip().split()[0]
         if len(word) > 1 and re.match(r'^[\u4E00-\u9FA5，]+$', word):
@@ -58,7 +58,7 @@ for word in vocab:
     if len(word) > 3 and word[-4] != '，':
         look_up[tuple([pinyin[1][-1] for pinyin in pinyins[-4:]])].append(word)
 
-with open('phrase_dict.txt', 'w') as f:
+with open('phrase_dict.txt', 'w', encoding="utf-8") as f:
     for k, v in look_up.items():
         f.write('{}\t{}\n'.format(' '.join(list(k)), ' '.join(sorted(v))))
     print('done!')

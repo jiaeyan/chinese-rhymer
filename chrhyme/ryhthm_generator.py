@@ -8,7 +8,7 @@ from typing import Set, List, Dict
 from chrhyme.parser import word_parser
 
 phrase_dict = {}
-with open(rf('chrhyme', 'data/phrase_dict.txt'), 'r') as f:
+with open(rf('chrhyme', 'data/phrase_dict.txt'), 'r', encoding="utf-8") as f:
     for line in f:
         items = line.strip().split('\t')
         phrase_dict[tuple(items[0].split())] = items[1].split()
