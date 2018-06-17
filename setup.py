@@ -21,7 +21,7 @@ extras_require = {
 
 setup(
     name="chrhyme",
-    version="0.2.5",
+    version="0.2.6",
     author="Jiajie Yan",
     author_email="jiaeyan@gmail.com",
     description="Find rhymes for Chinese words.",

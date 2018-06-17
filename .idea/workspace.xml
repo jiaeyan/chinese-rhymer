@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf8a3099-6013-42f9-a705-c369c3ad9956" name="Default" comment="" />
+    <list default="true" id="cf8a3099-6013-42f9-a705-c369c3ad9956" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,10 +17,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="setup.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
+            <state relative-caret-position="795">
               <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
               <folding>
                 <element signature="e#46#56#0" expanded="true" />
@@ -35,12 +38,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="795">
-                <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+              <first_editor relative-caret-position="147">
+                <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
               </first_editor>
               <second_editor />
             </state>
@@ -62,7 +65,7 @@
       <file leaf-file-name="parser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chrhyme/parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
+            <state relative-caret-position="1095">
               <caret line="75" selection-start-line="75" selection-end-line="75" />
               <folding>
                 <element signature="e#47#56#0" expanded="true" />
@@ -105,8 +108,8 @@
         <option value="$PROJECT_DIR$/chrhyme/parser.py" />
         <option value="$PROJECT_DIR$/MANIFEST.in" />
         <option value="$PROJECT_DIR$/chrhyme/ryhthm_generator.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -293,7 +296,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="113" y="4" width="1024" height="640" extended-state="0" />
+    <frame x="0" y="0" width="1024" height="640" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4962963" visible="true" weight="0.14855434" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3296501" />
@@ -323,6 +327,26 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/chrhyme/ryhthm_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding>
+            <element signature="e#47#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chrhyme/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+          <folding>
+            <element signature="e#47#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -506,22 +530,13 @@
     <entry file="file://$PROJECT_DIR$/data_prep.py" />
     <entry file="file://$PROJECT_DIR$/parser.py" />
     <entry file="file://$PROJECT_DIR$/ryhthm_generator.py" />
-    <entry file="file://$PROJECT_DIR$/chrhyme/phrase_dict.py">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="126900">
-          <caret line="51" column="18119" lean-forward="true" selection-start-line="51" selection-start-column="18119" selection-end-line="51" selection-end-column="18119" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/chrhyme/phrase_dict.py" />
     <entry file="file://$PROJECT_DIR$/chrhyme/__main__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.cfg">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/chrhyme/data_prep.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -532,10 +547,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chrhyme/parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
+        <state relative-caret-position="1095">
           <caret line="75" selection-start-line="75" selection-end-line="75" />
           <folding>
             <element signature="e#47#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MANIFEST.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+          <folding>
+            <element signature="e#46#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -551,34 +583,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="795">
-            <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+          <first_editor relative-caret-position="147">
+            <caret line="44" column="27" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MANIFEST.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
-          <folding>
-            <element signature="e#46#56#0" expanded="true" />
-          </folding>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>

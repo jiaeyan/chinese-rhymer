@@ -1,6 +1,6 @@
 # 中文押韵器 Chinese Rhymer
 ![Build](https://img.shields.io/badge/build-passing-green.svg)
-[![PyPI](https://img.shields.io/badge/pypi-v0.2.5-blue.svg)](https://pypi.org/project/chrhyme/)
+[![PyPI](https://img.shields.io/badge/pypi-v0.2.6-blue.svg)](https://pypi.org/project/chrhyme/)
 ![License](https://img.shields.io/badge/license-MIT-yellow.svg)
 
 ## 一、简介
@@ -41,6 +41,9 @@
 
 
 ## 四、版本更新
+* __v0.2.6__ (06/17/2018)  
+1、修正在Windows系统上打开数据文件出错的问题。
+
 * __v0.2.5__ (05/11/2018)  
 1、开放 __单押__ 功能  
 2、支持 __扩展押韵__，如输入词为`报恩`，可以查询到`一朝天子一朝臣`，即长度扩展的匹配词尾部与输入词押韵。  
